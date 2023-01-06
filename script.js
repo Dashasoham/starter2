@@ -10,4 +10,3 @@ if (hasDriversLicense) console.log("I can drive")
 //reserved words
 // const interface="Audio"
 // const private = 32
-const kol = 67
