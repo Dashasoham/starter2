@@ -119,4 +119,57 @@ const yearsUntilRet = function (birthYear, firstName) {
 console.log(yearsUntilRet(1991, "Dasha"))
 console.log(yearsUntilRet(1950, "Mike"))
 
+
+
+//Introduction to arrays
+
+const friend1 = "Michael"
+const friend2 = "Steven"
+const friend3 = "Peter"
+
+//1(literal syntax) more usual
+const friends = ["Michael", "Steven", "Peter"]
+console.log(friends)
+
+//2
+const years = new Array(1991, 1982, 2020, 2029)
+console.log(years)
+
+console.log(friends[0])
+
+console.log(friends.length)
+
+//the last element in the array
+console.log(friends[friends.length - 1])
+
+//mutating array7changing elements
+
+friends[2] = "Jay"
+console.log(friends)
+
+//Cannot mutate the whole array
+//friends = ["Bob", "Alice"]
+
+const firstName = "Dasha"
+const dasha = [firstName, "K", 2023 - 1991, "teacher", friends]
+console.log(dasha)
+
+//Excercise
+const calcAge = function (birthYear) {
+    return 2023 - birthYear
+}
+
+const year = [1990, 1967, 2002, 2010, 2018]
+//cannot do
+//console.log(calcAge(year))
+
+const age1 = calcAge(year[0])
+const age2 = calcAge(year[1])
+const age3 = calcAge(year[year.length - 1])
+
+console.log(age1, age2, age3)
+const ages = [calcAge(year[0]), calcAge(year[1]), calcAge(year[year.length - 1])]
+
+console.log(ages)
+
 */

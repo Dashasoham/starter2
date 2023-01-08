@@ -84,3 +84,44 @@ console.log(describePopulation("Ukraine", 43))
 console.log(describePopulation("Portugal", 10))
 
 */
+
+//Introduction to arrays
+
+// const populations = ["Ukraine", "Portugal", "India", "Canada"]
+// console.log(populations.length === 4)
+
+
+
+// const percentageOfWorld = function (population) {
+//     const percentageByCountry = (population / 4700) * 100
+//     return percentageByCountry
+// }
+
+// const chinaPopulation = percentageOfWorld(1441)
+// const portugalPopulation = percentageOfWorld(10)
+// const ukrainePopulation = percentageOfWorld(44)
+
+
+// console.log(chinaPopulation)
+
+// const percentages = [chinaPopulation, portugalPopulation, ukrainePopulation]
+// console.log(percentages)
+
+//______________
+
+const populations = [10, 1441, 332, 83]
+console.log(populations.length === 4)
+
+const percentageOfWorld = function (population) {
+    const percentageByCountry = (population / 4700) * 100
+    return percentageByCountry
+}
+
+const percentages = [
+    percentageOfWorld(populations[0]),
+    percentageOfWorld(populations[1]),
+    percentageOfWorld(populations[2]),
+    percentageOfWorld(populations[3])
+
+]
+console.log(percentages)
