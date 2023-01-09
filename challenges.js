@@ -61,3 +61,49 @@ console.log(total)
 
 
 */
+
+//#3 Object methods
+
+const mark = {
+    firstName: "Mark",
+    lastName: "Miller",
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2
+        return this.bmi
+    }
+}
+
+const john = {
+    firstName: "John",
+    lastName: "Smith",
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2
+        return this.bmi
+
+    }
+}
+
+//NEED TO CALL THE FUNCTION TO ACCESS A NEW PROPERTY
+john.calcBMI()
+console.log(john.bmi)
+
+// const showBMI = (mark, john) => mark.calcBMI() > john.calcBMI() ? console.log(`${mark.firstName}´s BMI ${mark.calcBMI()} is highter than ${john.firstName}´s ${john.calcBMI()}`) : console.log(`${john.firstName}´s BMI ${john.calcBMI()} is highter than ${mark.firstName}´s ${mark.calcBMI()}`)
+
+// console.log(showBMI)
+
+if (mark.bmi > john.bmi) {
+    console.log(`${mark.firstName}´s BMI ${mark.bmi} is highter than ${john.firstName}´s ${john.bmi}`)
+} else {
+    console.log(`${john.firstName}´s BMI ${john.bmi} is highter than ${mark.firstName}´s ${mark.bmi}`)
+}
+
+// const sentence = mark => mark.calcBMI() > john.calcBMI() ? `${mark.firstName}´s BMI ${mark.calcBMI()} is highter than ${john.firstName}´s ${john.calcBMI()}` : `${john.firstName}´s BMI ${john.calcBMI()} is highter than ${mark.firstName}´s ${mark.calcBMI()}`
+
+console.log(mark.calcBMI())
+console.log(john.calcBMI())
+
+
