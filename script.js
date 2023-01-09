@@ -172,4 +172,89 @@ const ages = [calcAge(year[0]), calcAge(year[1]), calcAge(year[year.length - 1])
 
 console.log(ages)
 
+
+//Add elements
+const friends = ["Michael", "Steven", "Peter"]
+const newLength = friends.push("Jay")
+console.log(friends)
+console.log(friends.length)
+
+friends.unshift("John")
+console.log(friends)
+
+//Remove elements
+
+friends.pop()
+const popped = friends.pop()
+console.log(popped)
+console.log(friends)
+
+friends.shift()
+console.log(friends)
+
+//position in the array
+console.log(friends.indexOf("Steven"))
+console.log(friends.indexOf("Bob"))
+
+//ES6 method, doesn´t do type cohersion
+friends.push(23)
+console.log(friends.includes("Steven"))
+console.log(friends.includes("Bob"))
+console.log(friends.includes(23))
+console.log(friends.includes("23"))
+
+
+if (friends.includes("Steven")) {
+    console.log("You have a friend named Steven")
+}
+
+
+
+
+const dashaArray = [
+    "Dasha",
+    "K",
+    2023 - 1991,
+    "teacher"
+    ["Michael", "Steven", "Peter"]
+]
+
+//Objects
+
+const dasha = {
+    firstName: "Dasha",
+    lastName: "K",
+    age: 2023 - 1991,
+    job: "teacher",
+    friends: ["Michael", "Steven", "Peter"]
+}
+console.log(dasha)
+
+//retrieving
+console.log(dasha.lastName)
+console.log(dasha["lastName"])
+
+const nameKey = "Name"
+console.log(dasha["first" + nameKey])
+console.log(dasha["last" + nameKey])
+
+//const interestedIn = prompt("what do you want to know about Dasha? Choose between firstName, lastName, age, job and friends")
+//console.log(dasha[interestedIn])
+
+// if (dasha[interestedIn]) {
+//     console.log(dasha[interestedIn])
+// } else {
+//     console.log("Wrong request.Choose between firstName, lastName, age, job and friends")
+// }
+
+
+dasha.location = "Portugal"
+dasha["twitter"] = "@test"
+console.log(dasha)
+
+//Challenge
+//"Dasha has 3 friends and her best friend is Steven
+
+console.log(`${dasha.firstName} has ${dasha.friends.length} friends and her best friend is ${dasha.friends[1]}`)
+
 */

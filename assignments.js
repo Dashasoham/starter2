@@ -83,7 +83,7 @@ console.log(describePopulation("China", 1441))
 console.log(describePopulation("Ukraine", 43))
 console.log(describePopulation("Portugal", 10))
 
-*/
+
 
 //Introduction to arrays
 
@@ -125,3 +125,76 @@ const percentages = [
 
 ]
 console.log(percentages)
+
+
+
+//Basic Array Operations
+
+const neighbours = ["Popand", "Hungary", "Slovakia", "Romania", "Moldova", "Belarus"]
+
+neighbours.push("Utopia")
+console.log(neighbours)
+
+neighbours.pop()
+console.log(neighbours)
+
+// const includesGermany = neighbours => neighbours.includes("Germany") ? `Germany is a neighbour` : `Not central Europe`
+
+// console.log(includesGermany)
+
+// if (neighbours.includes("Germany")) {
+//     console.log("Includes Germany")
+// } else {
+//     console.log("Probably not a central European country")
+// }
+
+if (!neighbours.includes("Germany")) {
+    console.log("Probably not a central European country")
+
+}
+
+// console.log(neighbours.indexOf("Belarus"))
+// console.log(neighbours[5])
+
+// neighbours[5] = "Portugal"
+// console.log(neighbours)
+
+neighbours[neighbours.indexOf("Belarus")] = "Portugal"
+console.log(neighbours)
+
+
+
+const myCountry = {
+    country: "Ukraine",
+    capital: "Kyiv",
+    language: "Ukrainian",
+    population: 38,
+    neighbours: ["Popand", "Hungary", "Slovakia", "Romania", "Moldova", "Belarus"]
+
+}
+
+console.log(myCountry.country)
+console.log(myCountry.neighbours[3])
+
+*/
+
+//LECTURE: Dot vs. Bracket Notation
+
+const myCountry = {
+    country: "Ukraine",
+    capital: "Kyiv",
+    language: "Ukrainian",
+    population: 38,
+    neighbours: ["Popand", "Hungary", "Slovakia", "Romania", "Moldova", "Belarus"]
+
+}
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and the capital is called ${myCountry.capital}`)
+
+myCountry.population += 2
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and the capital is called ${myCountry.capital}`)
+
+myCountry["population"] -= 2
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and the capital is called ${myCountry.capital}`)
+
+
