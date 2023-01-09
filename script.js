@@ -257,4 +257,44 @@ console.log(dasha)
 
 console.log(`${dasha.firstName} has ${dasha.friends.length} friends and her best friend is ${dasha.friends[1]}`)
 
+
+
+const dasha = {
+    firstName: "Dasha",
+    lastName: "K",
+    birthYear: 1991,
+    job: "teacher",
+    friends: ["Michael", "Steven", "Peter"],
+    hasDriversLicense: true,
+
+    // calcAge: function (birthYear) {
+    //     return 2023 - birthYear
+    // }
+
+    // calcAge: function () {
+    //     //console.log(this)
+    //     return 2023 - this.birthYear
+    // }
+    calcAge: function () {
+        this.age = 2023 - this.birthYear
+        return this.age
+    },
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and she has ${this.hasDriversLicense ? `a driving license` : `no driving license`}  `
+    }
+}
+
+
+//console.log(dasha.calcAge(dasha.birthYear))
+console.log(dasha.calcAge())
+//console.log(dasha["calcAge"](1991))
+
+console.log(dasha.age)
+console.log(dasha.age)
+console.log(dasha.age)
+
+
+//Challenge
+console.log(dasha.getSummary())
+
 */

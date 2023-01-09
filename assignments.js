@@ -176,7 +176,7 @@ const myCountry = {
 console.log(myCountry.country)
 console.log(myCountry.neighbours[3])
 
-*/
+
 
 //LECTURE: Dot vs. Bracket Notation
 
@@ -196,5 +196,36 @@ console.log(`${myCountry.country} has ${myCountry.population} million ${myCountr
 
 myCountry["population"] -= 2
 console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and the capital is called ${myCountry.capital}`)
+
+
+*/
+//Object Methods
+
+const myCountry = {
+    country: "Ukraine",
+    capital: "Kyiv",
+    language: "Ukrainian",
+    population: 38,
+    neighbours: ["Poland", "Hungary", "Slovakia", "Romania", "Moldova", "Belarus"],
+    describe: function () {
+
+        return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and the capital is called ${this.capital}`
+    },
+    checkIsland: function () {
+        this.isIsland = this.neighbours.length === 0 ? true : false
+
+    }
+
+}
+
+console.log(myCountry.describe())
+myCountry.checkIsland()
+// console.log(myCountry)
+console.log(myCountry.isIsland)
+
+
+
+
+
 
 
