@@ -297,4 +297,114 @@ console.log(dasha.age)
 //Challenge
 console.log(dasha.getSummary())
 
+
+
+
+
+//LOOPS
+//for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 3; rep++) {
+    console.log(`Fencing repetition ${rep} 🤺`)
+
+}
+
+
+
+const dashaArray = [
+    "Dasha",
+    "K",
+    2023 - 1991,
+    "teacher",
+    ["Michael", "Steven", "Peter"],
+    //2)add number [5]
+    true
+]
+
+
+const types = []
+//console.log(dashaArray[4])
+
+//1)dashaArray[5] does NOT exist--->
+//dashaArray.length - dynamic value
+for (let i = 0; i < dashaArray.length; i++) {
+    //Reading from DashaArray array
+    console.log(dashaArray[i], typeof dashaArray[i])
+
+    //Filling types array
+    //types[i] = typeof dashaArray[i]
+    types.push(typeof dashaArray[i])
+}
+console.log(types)
+
+const years = [1991, 2007, 1969, 2020]
+const ages = []
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2023 - years[i])
+}
+console.log(ages)
+
+//Continue and Break
+console.log("-----ONLY STRINGS---")
+for (let i = 0; i < dashaArray.length; i++) {
+    if (typeof dashaArray[i] !== "string") continue
+    console.log(dashaArray[i], typeof dashaArray[i])
+}
+
+console.log("-----BREAK WITH NUMBER---")
+
+for (let i = 0; i < dashaArray.length; i++) {
+    if (typeof dashaArray[i] === "number") break
+    console.log(dashaArray[i], typeof dashaArray[i])
+}
+
+
+
+//_______________________
+//LOOPING BACWARDS;LOOPS IN LOOPS
+
+const dasha = [
+    "Dasha",
+    "K",
+    2023 - 1991,
+    "teacher",
+    ["Michael", "Steven", "Peter"],
+    true
+
+]
+
+for (let i = dasha.length - 1; i >= 0; i--) {
+    console.log(i, dasha[i]);
+}
+
+//LOOP INSIDE A LOOP
+
+for (let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`-----STARTING EXERCISE ${exercise}`)
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise} Lifting weights repetition ${rep}`)
+    }
+}
 */
+
+//THE WHILE LOOP
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Fencing repetition ${rep} 🤺`)
+
+// }
+
+// let rep = 1
+// while (rep <= 10) {
+//     console.log(`WHILE:Fencing repetition ${rep} 🤺`)
+//     rep++
+
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1
+console.log(dice)
+
+while (dice !== 6) {
+    dice = Math.trunc(Math.random() * 6)
+    console.log(`You rolled a ${dice}`)
+}

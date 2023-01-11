@@ -224,8 +224,79 @@ myCountry.checkIsland()
 console.log(myCountry.isIsland)
 
 
+
+
+//LOOPS
+
+for (let voter = 1; voter <= 50; voter++) {
+    console.log(`Voter number ${voter} is currently voting`)
+}
+
+______________________
+LOOPING ARRAYS
+
+const populations = [10, 1441, 332, 83]
+const percentages2 = []
+
+const percentageOfWorld = function (population) {
+    const percentageByCountry = (population / 4700) * 100
+    return percentageByCountry
+}
+
+for (let i = 0; i < populations.length; i++) {
+    const perc = percentageOfWorld(populations[i]);
+    percentages2.push(perc)
+
+    console.log(perc)
+
+}
+console.log(percentages2)
+//___________________________
+//LOOPING BACKWARDS AND LOOPS IN LOOPS
 */
+//?????????????????
+// const listOfNeighbours = [["Canada", "Mexico"], ["Spain"], ["Norway", "Sweden", "Ukraine"]]
+
+// // for (let i = 0; i < listOfNeighbours.length; i++) {
+
+// //     for (let y = 0; y < listOfNeighbours[i].length; y++)
+// //         console.log(`Neighbour: ${listOfNeighbours[i][y]}`)
+// // }
+
+// for (let i = 0; i < listOfNeighbours.length; i++) {
+//     // for (let j = 0; j < listOfNeighbours[i].length; j++) {
+//     console.log(`Neighbour: ${listOfNeighbours[i]}`)
+// }
+// statement for outer loop
+// }
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i)
+// }
+
+
+const test = [["A", "B"],
+["C", "D", "E"],
+["F", "G"]];
+// for (let i = 0; i < test.length; i++) {
+//     //console.log("First")
+//     console.log([i])
+
+//     for (let j = 0; j < test[i].length; j++) {
+//         //console.log("Second")
+//         console.log([j])
+
+//     }
+// }
+
+// test.map((firstLoopItem, firstLoopIndex) => {
+//     console.log(firstLoopItem, "firstLoopIndex");
+//     firstLoopItem.map((secondLoopItem, secondLoopIndex) => console.log(secondLoopItem, "secondLoopIndex"))
+
+// })
 
 
 
-
+// for (let i = 0; i < 5; i++) {
+//     console.log(`The current value of i is: ${i}`)
+// }
