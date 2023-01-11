@@ -275,9 +275,9 @@ console.log(percentages2)
 // }
 
 
-const test = [["A", "B"],
-["C", "D", "E"],
-["F", "G"]];
+// const test = [["A", "B"],
+// ["C", "D", "E"],
+// ["F", "G"]];
 // for (let i = 0; i < test.length; i++) {
 //     //console.log("First")
 //     console.log([i])
@@ -300,3 +300,27 @@ const test = [["A", "B"],
 // for (let i = 0; i < 5; i++) {
 //     console.log(`The current value of i is: ${i}`)
 // }
+// const populations = [10, 1441, 332, 83]
+// const percentages3 = []
+
+// const percentageOfWorld = function (population) {
+//     const percentageByCountry = (population / 4700) * 100
+//     return percentageByCountry
+// }
+
+// let i = 0
+
+// while (i < populations.length) {
+//     const perc = percentageOfWorld(populations[i]);
+//     percentages3.push(perc)
+//     i++
+// }
+// console.log(percentages3)
+
+// for (let i = 0; i < populations.length; i++) {
+//     const perc = percentageOfWorld(populations[i]);
+//     percentages3.push(perc)
+
+
+// }
+// console.log(percentages3)

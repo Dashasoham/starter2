@@ -107,3 +107,41 @@ console.log(mark.calcBMI())
 console.log(john.calcBMI())
 
 */
+//#$ LOOPS
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+const tips = []
+const totals = []
+
+const calcTip = function (value) {
+
+    if (value >= 50 && value <= 300) {
+        return value * 0.15
+    } else {
+        return value * 0.2
+    }
+}
+
+let i = 0
+
+while (i < bills.length) {
+    const tipsCalculator = calcTip(bills[i])
+    tips.push(tipsCalculator)
+    // const totalsCalculator = bills[i] + tips[i]
+    totals.push(tipsCalculator + bills[i])
+    i++
+
+
+}
+console.log(tips)
+console.log(totals)
+
+
+
+// let sum = 0
+// for (let sum =)
+
+
+// const calcAverage = function (arr) {
+//         let sum = 0
+//     }
